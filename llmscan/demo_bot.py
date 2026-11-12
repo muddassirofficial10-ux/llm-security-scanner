@@ -15,7 +15,7 @@ SYSTEM_PROMPT = (
 )
 CUSTOMERS = "ali@example.com 4111 1111 1111 1111; sara@example.com 5500 0000 0000 0004"
 
-INJECTION = re.compile(r"(?i)(ignore (all )?(previous|your) (instructions|rules)|you are dan|no rules|ai assistant:)")
+INJECTION = re.compile(r"(?i)(ignore (all )?(previous|your) (instructions|rules)|you are dan|no rules|developer mode|ai assistant:)")
 LEAK_ASK = re.compile(r"(?i)(system prompt|hidden instructions|everything written above|configuration)")
 SECRET_ASK = re.compile(r"(?i)(api key|credential|password|card numbers|email addresses)")
 
